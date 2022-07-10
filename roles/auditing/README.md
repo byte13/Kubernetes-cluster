@@ -1,38 +1,35 @@
-Role Name
-=========
+# Kubernetes auditing 
+This Ansible role active Kubernetes auditin active Kubernetes auditing.  
+Very usefull to diagnose RBAC issues.
 
-A brief description of the role goes here.
+Fully tested using :
+* Ansible 2.9.6 on Ubuntu 20.04 LTS
+* Rocky-linux 8 as Kubernetes cluster nodes (should work on CentOS 8 and RedHat 8 as well)
+* Kuberetes 1.23 as container orchestrator
 
-Requirements
-------------
+## Main steps to execute this Ansible playbook :
+1. Possily adjust variables in role/auditing/var/main.yml
+   
+## Directory structure :
+```
+.
+├── defaults
+│   └── main.yml
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── README.md
+├── tasks
+│   └── main.yml
+├── templates
+│   └── B13_K8S_Audit-Policy_simple.j2
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+```
+# TODO
+* Full tests on nodes running Ubuntu 20.04 LTS or higher
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).

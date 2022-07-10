@@ -1,7 +1,7 @@
 # CRI-O containers runtime interface 
-This Ansible role installs CRI-O containers runtime
-Note that the playbook detects if target OS is Ubuntu or Rocky-Linux/Centos/Redhat and runs respective tasks.
-So there are variables specific to each OS.
+This Ansible role installs CRI-O containers runtime  
+Note that the playbook detects if target OS is Ubuntu or Rocky-Linux/Centos/Redhat and runs respective tasks.   
+So there are variables specific to each OS.   
 
 Fully tested using :
 * Ansible 2.9.6 on Ubuntu 20.04 LTS
