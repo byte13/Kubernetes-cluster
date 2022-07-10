@@ -5,7 +5,6 @@ So there are variables specific to each OS.
 
 Fully tested using :
 * Ansible 2.9.6 on Ubuntu 20.04 LTS
-* To manage selinux, Ansible requires the installation of a module using "ansible-galaxy collection install ansible.posix"
 * Rocky-linux 8 as Kubernetes cluster nodes (should work on CentOS 8 and RedHat 8 as well)
 * CRI-O 1.23 as container runtime
 * Kubernetes 1.23
@@ -31,13 +30,18 @@ Fully tested using :
     $ vi hosts_inventory.yml 
 ``` 
 6. Follow the instructions in each role/<role>/README.md file
+
+7. To manage selinux, Ansible requires the installation of a module using the following command :
+```
+    $ ansible-galaxy collection install ansible.posix
+```
    
-7. Run the playbook
+8. Run the playbook
 ```
     $ ansible-playbook -i hosts_inventory.yml Kubernetes_masters_workers.yml -K
         ... when prompted, enter the target account passphrase (as used by sudo)
 ```
-7. After the run has completed without error, log onto the master node using the account created at step 1 and use kubectl to manage the cluster. The kubeconfig file is copied locally, too, so that you can manage the cluster from your Ansible host using the following command :
+9. After the run has completed without error, log onto the master node using the account created at step 1 and use kubectl to manage the cluster. The kubeconfig file is copied locally, too, so that you can manage the cluster from your Ansible host using the following command :
 ```
     $ kubectl --kubeconfig <master node FQDN>_admin.conf <other arguments>
     Note : <master node hostname or IP>_admin.conf is retrieved locally by the playbook.
