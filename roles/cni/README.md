@@ -9,7 +9,7 @@ Fully tested using :
 * CRI-O 1.23 as container runtime
 
 ## Main steps to execute this Ansible playbook :
-1. Possily adjust variables in role/cni/var/main.yml.
+1. Possibly adjust variables in role/cni/var/main.yml.
    Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead.
    
 ## Directory structure :

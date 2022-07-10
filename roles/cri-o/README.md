@@ -9,7 +9,7 @@ Fully tested using :
 * CRI-O 1.23 as container runtime
 
 ## Main steps to execute this Ansible playbook :
-1. Possily adjust variables in role/cri-o/var/main.yml
+1. Possibly adjust variables in role/cri-o/var/main.yml
    
 ## Directory structure :
 ```

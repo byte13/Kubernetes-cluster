@@ -8,7 +8,7 @@ Fully tested using :
 * Kuberetes 1.23 as container orchestrator
 
 ## Main steps to execute this Ansible playbook :
-1. Possily adjust variables in role/auditing/var/main.yml
+1. Possibly adjust variables in role/auditing/var/main.yml
    
 ## Directory structure :
 ```

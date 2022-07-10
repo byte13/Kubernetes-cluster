@@ -9,7 +9,7 @@ Fully tested using :
 * Kubernetes 1.23 as container orchestrator
 
 ## Main steps to execute this Ansible playbook :
-1. Possily adjust variables in role/k8s/var/main.yml
+1. Possibly adjust variables in role/k8s/var/main.yml
    
 ## Directory structure :
 ```
@@ -38,5 +38,5 @@ Fully tested using :
     └── main.yml
 ```
 # TODO
-* Full tests with Kubernetes nodes running Ubuntu 20.04 LTS or higher
+* Full tests with Kubernetes on nodes running Ubuntu 20.04 LTS or higher
 
