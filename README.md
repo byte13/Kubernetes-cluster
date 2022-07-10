@@ -1,7 +1,7 @@
 # Kubernetes-cluster-deployment 
-This set of Ansible roles installs a Kubernetes cluster composed of 1 master and N workers. 
-Note that the playbook detects if target OS is Ubuntu or Redhat/Centos/Rocky-Linux and runs respective tasks. 
-So there are variables specific to each OS. 
+This set of Ansible roles installs a Kubernetes cluster composed of 1 master and N workers.   
+Note that the playbook detects if target OS is Ubuntu or Redhat/Centos/Rocky-Linux and runs respective tasks.   
+So there are variables specific to each OS.   
 
 Fully tested using :
 * Ansible 2.9.6 on Ubuntu 20.04 LTS
