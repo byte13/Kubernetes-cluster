@@ -1,5 +1,5 @@
 # Container network interface
-This Ansible role installs Container Runtime Interfaces (CNI) in a Kubernetes cluster
+This Ansible role installs Container Runtime Interfaces (CNI) in a Kubernetes cluster.
 Note that the playbook detects if target OS is Ubuntu or Rocky-Linux/Centos/Redhat and runs respective tasks.
 So there are variables specific to each OS.
 
@@ -9,8 +9,8 @@ Fully tested using :
 * CRI-O 1.23 as container runtime
 
 ## Main steps to execute this Ansible playbook :
-1. Possily adjust variables in role/cni/var/main.yml
-   Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead
+1. Possily adjust variables in role/cni/var/main.yml.
+   Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead.
    
 ## Directory structure :
 ```
