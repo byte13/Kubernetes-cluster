@@ -8,7 +8,7 @@ Fully tested using :
 * Rocky-linux 8 as Kubernetes cluster nodes (should work on CentOS 8 and RedHat 8 as well)
 * CRI-O 1.23 as container runtime
 * Kubernetes 1.23
-* Calico as Container Network Interface (CNI), but ready to install Weave or Cilium instead (see roles/cni/README.md)
+* Calico as Container Network Interface (CNI), but ready to install Antrea, Cilium or Weave instead (see roles/cni/README.md)
 * HAproxy as ingress controller
 
 ## Main steps to execute this Ansible playbook :

@@ -10,6 +10,7 @@ Fully tested using :
 
 ## Main steps to execute this Ansible playbook :
 1. Possily adjust variables in role/cni/var/main.yml
+   Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead
    
 ## Directory structure :
 ```
