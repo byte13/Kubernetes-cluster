@@ -10,8 +10,13 @@ Fully tested using :
 
 ## Main steps to execute this Ansible playbook :
 1. Possibly adjust variables in role/cni/var/main.yml.
+2. Ensure that the following variables values don't confict/overlap with your enterprise IP addresses ranges
+* k8s_pods_subnet
+* k8s_pods_subnetmask
    Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead.
-   
+3. Choose one CNI provider, only, setting the folloing variable respectively to target OS :
+* centos_cni
+* ubuntu_cni 
 ## Directory structure :
 ```
 .
