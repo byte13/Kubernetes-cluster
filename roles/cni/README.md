@@ -17,6 +17,7 @@ Fully tested using :
 3. Choose one CNI provider, only, setting the folloing variable respectively to target OS :
 * centos_cni
 * ubuntu_cni  
+  
 Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead.
 ## Directory structure :
 ```
