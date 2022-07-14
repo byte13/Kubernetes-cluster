@@ -45,5 +45,6 @@ Calico, only has been fully tested with this playbook, yet, but one could select
     └── main.yml
 ```
 # TODO
+* Full tests with Antrea, Cilium and Weave CNI's
 * Full tests with Kubernetes nodes running Ubuntu 20.04 LTS or higher
 
