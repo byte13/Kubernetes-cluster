@@ -163,7 +163,8 @@ Fully tested using :
 ```
 # TODO
 * Full tests with Kubernetes nodes running Ubuntu 20.04 LTS or higher
-* Full tests with Cilium CDN on both OS family
-* Full tests with Weave CDN on both OS family
+* Full tests with Antrea CNI on both OS family
+* Full tests with Cilium CNI on both OS family
+* Full tests with Weave CNI on both OS family
 * Role to apply CIS Benchmarks 1.23 recommandations
 
