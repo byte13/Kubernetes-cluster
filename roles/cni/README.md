@@ -18,7 +18,7 @@ Fully tested using :
 * centos_cni
 * ubuntu_cni  
   
-Calico, only has been fully tested, yet. But one could select Antrea, Cilium of Weave CNI instead.
+Calico, only has been fully tested, yet, but one could select Antrea, Cilium of Weave CNI instead.
 ## Directory structure :
 ```
 .
